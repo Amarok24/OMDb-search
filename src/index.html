@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- As of 2020-06-09 JS modules are still not supported in XHTML (XML)
+         documents in Chromium-based browsers! See crbug.com/717643
+         (no problems in Firefox though)
+         Therefore this document is a simple HTML5 doc :-(
+    -->
+
+    <title>OMDb search demo</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="./modules/main.mjs" type="module" defer="defer"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header>
+
+        <h1>OMDb search demo</h1>
+
+        <p>
+          This is a demo of my jXhr and jLoader JS modules.<br />
+          Project source code on Github: <a href="https://github.com/Amarok24/OMDb-search">https://github.com/Amarok24/OMDb-search</a><br />
+          <strong>jXhr</strong> is an async version of XMLHttpRequest with an universal API.<br />
+          <strong>jLoader</strong> is a simple animated loader (only 1 MJS file, no CSS).
+        </p>
+
+        <div class="dividerBook">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
+          </svg>
+        </div>
+
+      </header>
+
+
+      <section>
+
+
+        <p>
+          Simple search in the Open Movie Database (OMDb) with title links to the Internet Movie Database (IMDb).<br />
+           See <a href="http://www.omdbapi.com/">http://www.omdbapi.com/</a> for more info about this API.<br />
+           OMDb needs a registrated API key to work (get your API key from <a href="https://www.omdbapi.com/apikey.aspx">https://www.omdbapi.com/apikey.aspx</a>).
+        </p>
+
+
+        <form>
+          <label for="apiKey">Your OMDb API key</label>
+          <input type="password" id="apiKey" />
+          <input type="button" id="apiSaveButton" value="Save in browser" />
+          <br />
+          <label for="filmTitle">Title</label><br />
+          <input type="text" id="filmTitle" placeholder="Enter film title" tabindex="0" autofocus /><br />
+          <input type="submit" value="Search" id="submitButton" tabindex="1" />
+        </form>
+
+
+
+
+      </section>
+
+
+      <section id="filmListing">
+        <!-- Film details will appear here -->
+      </section>
+
+
+      <footer>
+          <!-- Some messages will appear here -->
+      </footer>
+
+    </div>
+
+
+
+    <template id="templateFilm">
+
+      <article class="film">
+        <h3>Film title</h3>
+        <div class="filmYear"></div>
+        <div class="filmType"></div>
+        <div class="filmID"></div>
+        <div class="filmLink"> <a href="" target="_blank">www.imdb.com/title/&hellip;</a> </div>
+        <img src="#" alt="" class="filmPoster" />
+      </article>
+
+    </template>
+
+
+
+  </body>
+</html>
