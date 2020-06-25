@@ -7,8 +7,12 @@ It uses JavaScript modules so it won't work offline in a browser. Start a live-s
 
 You will need your own OMDb API key, get it from https://www.omdbapi.com/apikey.aspx
 
+<h3>SCREENSHOT</h3>
 
-TROUBLESHOOTING
+[see here](./omdb-search-demo__2020-06-25.png)
+
+
+<h3>TROUBLESHOOTING</h3>
 
 You may get one of those errors in the browser console and the script won't run:
 
