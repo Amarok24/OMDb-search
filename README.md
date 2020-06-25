@@ -16,4 +16,8 @@ Loading module from “xxxxxxx/modules/main.mjs” was blocked because of a disa
 
 Failed to load module script: The server responded with a non-JavaScript MIME type of "". Strict MIME type checking is enforced for module scripts per HTML spec.
 
-In such cases a simple renaming to .js (instead of .mjs) won't help. If you are running an Apache server just use the .htaccess file from this repository and place it to the same folder like the index.html file. Some server admins simply forget to configure Apache to use JavaScript modules out-of-the-box.
+In such cases the server does not know the MIME type of JavaScript modules. A simple renaming to .js (instead of .mjs) won't help. If you are running an Apache server put this into your .htaccess file:
+
+  RewriteEngine on
+
+  AddType application/javascript .mjs
