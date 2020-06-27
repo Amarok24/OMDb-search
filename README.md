@@ -24,4 +24,4 @@ In such cases the server does not know the MIME type of JavaScript modules. A si
 
 <code>RewriteEngine on</code>
 
-<code>AddType application/javascript .mjs</code>
+<code>AddType application/javascript .js .mjs</code>
