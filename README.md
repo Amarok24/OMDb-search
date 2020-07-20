@@ -1,4 +1,5 @@
-# OMDb-search
+# OMDb-search ![version](https://img.shields.io/badge/version-1.0-orange.svg) ![Minified](https://img.shields.io/badge/minified%20JS-5%20kb-green)
+
 JavaScript demo of asynchronous XHR and the free OMDb API (Open Movie Database).
 
 * No dependencies, vanilla JavaScript + HTML5.
