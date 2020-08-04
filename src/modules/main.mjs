@@ -1,9 +1,12 @@
 ﻿/**
   * @description JavaScript demo of async XHR and OMDb API (Open Movie Database).
-  * @website https://github.com/Amarok24/OMDb-search
-  * @license MPL 2.0
-  * @author Jan Prazak
   * @version 1.01
+  * @author Jan Prazak
+  * @website https://github.com/Amarok24/OMDb-search
+  * @license MPL-2.0
+  This Source Code Form is subject to the terms of the Mozilla Public License,
+  v. 2.0. If a copy of the MPL was not distributed with this file, you can
+  obtain one at http://mozilla.org/MPL/2.0/.  
   */
 
 import * as jXhr from "./jXhr.mjs";
