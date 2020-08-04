@@ -3,7 +3,7 @@
   * @website https://github.com/Amarok24/OMDb-search
   * @license MPL 2.0
   * @author Jan Prazak
-  * @version 1.0
+  * @version 1.01
   */
 
 import * as jXhr from "./jXhr.mjs";
@@ -18,7 +18,7 @@ let _filmListing = document.getElementById("filmListing");
 
 
 // The Open Movie Database API http://www.omdbapi.com/
-const _omdbURL = "http://www.omdbapi.com/?apikey="
+const _omdbURL = "https://www.omdbapi.com/?apikey="
 let _apiKey = "";
 
 
